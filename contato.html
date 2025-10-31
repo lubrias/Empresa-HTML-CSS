@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+        /* Reset básico */
+        * { box-sizing: border-box; margin:0; padding: 0; }
+
+        body {
+            font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+            color:#111;
+            background-image: url(img/bgpaginas.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; /* imagem cobre o conteúdo */
+            background-attachment: fixed;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        /* Header / menu superior */
+        header {
+            border-bottom: 2px solid #000;
+            padding: 18px 0;
+            background: #fff; /* branco por cima do fundo */
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* distribui os links horizontalmente */
+            align-items: center;
+            padding: 0 16px;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 22px;
+            padding: 4px 18px;
+            font-weight: 600;
+        }
+
+        /* Área principal + aside (menu lateral) */
+        .layout {
+            max-width: 1200px;
+            margin: 30px auto;
+            display: flex;
+            gap: 24px;
+            padding: 0 16px;
+        }
+
+        /* Main: usa a imagem de fundo e cobre o espaço */
+        main {
+            flex: 1;
+            min-height: 600px; /* ajustando conforme precisar */
+
+            border: 0px solid rgba(0,0,0,0.5);
+            padding: 18px;
+            color: rgba(0,0,0,0.5);
+        }
+        main section {
+            margin: 18px 0;
+        }
+
+        table {
+          width: 100%;
+          border-spacing: 20px;
+        }
+        td {
+          background-color: rgba(255,255,255,0.85);
+          border-radius: 10px;
+          padding: 20px;
+          vertical-align: top;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h3 {
+          margin-bottom: 10px;
+          color: #333;
+        }
+        p {
+          margin: 10px 0;
+        }
+        main {
+          text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho / menu superior -->
+     <header>
+        <nav>
+            <a href="index.html"> HOME</a>
+            <a href="#"> Quem somos?</a>
+            <a href="#"> Portfólio</a>
+            <a href="contato.html"> Contato</a>
+        </nav>
+     </header>
+
+     <!-- Conteúdo principal + menu lateral -->
+      <div class="layout">
+        <main>
+  <h2>Entre em contato com a equipe</h2>
+  <p>Escolha o integrante e clique no canal desejado:</p>
+
+  <table width="100%" cellpadding="20">
+    <tr align="left" valign="top">
+      <td width="50%">
+        <h3>Thayslan Costa</h3>
+        <p><strong>E‑mail:</strong><br>
+        <a href="mailto:thayslan.costa@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail de Thayslan">
+        </a></p>
+        <p><strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/thayslan-costa-6a4536285/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Thayslan">
+        </a></p>
+        <p><strong>GitHub:</strong><br>
+        <a href="https://github.com/thayslancosta" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de Thayslan">
+        </a></p>
+        <p><strong>Instagram:</strong><br>
+        <a href="https://www.instagram.com/thayslan" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram de Thayslan">
+        </a></p>
+      </td>
+      <td width="50%">
+        <h3>Ramon Trindade</h3>
+        <p><strong>E‑mail:</strong><br>
+        <a href="mailto:ramon@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail de Ramon">
+        </a></p>
+        <p><strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/ramon-camelo-54761336b/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Ramon">
+        </a></p>
+        <p><strong>GitHub:</strong><br>
+        <a href="https://github.com/ramontrindd" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de Ramon">
+        </a></p>
+        <p><strong>Instagram:</strong><br>
+        <a href="https://www.instagram.com/ramon" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram de Ramon">
+        </a></p>
+      </td>
+    </tr>
+    <tr align="left" valign="top">
+      <td>
+        <h3>Pedro Henrique</h3>
+        <p><strong>E‑mail:</strong><br>
+        <a href="mailto:pedrohenrique@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail de Pedro Henrique">
+        </a></p>
+        <p><strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/pedro-henrique-057421352" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Pedro Henrique">
+        </a></p>
+        <p><strong>GitHub:</strong><br>
+        <a href="https://github.com/PedroRodrigues17" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de Pedro Henrique">
+        </a></p>
+        <p><strong>Instagram:</strong><br>
+        <a href="https://www.instagram.com/pedroo._.hr" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram de Pedro Henrique">
+        </a></p>
+      </td>
+      <td>
+        <h3>João Vitor</h3>
+        <p><strong>E‑mail:</strong><br>
+        <a href="mailto:joaovitor@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail de João Vitor">
+        </a></p>
+        <p><strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vicente-b5154436b/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de João Vitor">
+        </a></p>
+        <p><strong>GitHub:</strong><br>
+        Não informado</p>
+        <p><strong>Instagram:</strong><br>
+        <a href="https://www.instagram.com/joaovitorvqrz/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram de João Vitor">
+        </a></p>
+      </td>
+    </tr>
+    <tr align="left" valign="top">
+      <td colspan="2">
+        <h3>Walter Luan</h3>
+        <p><strong>E‑mail:</strong><br>
+        <a href="mailto:walterluan@gmail.com" target="_blank">
+          <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail de Walter Luan">
+        </a></p>
+        <p><strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/luan-lima-475581366/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Walter Luan">
+        </a></p>
+        <p><strong>GitHub:</strong><br>
+        <a href="https://github.com/lubrias/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub de Walter Luan">
+        </a></p>
+        <p><strong>Instagram:</strong><br>
+        <a href="https://www.instagram.com/walterluan/" target="_blank" rel="noopener">
+          <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram de Walter Luan">
+        </a></p>
+      </td>
+    </tr>
+  </table>
+        </main>
+      </div>
+</body>
+</html>
