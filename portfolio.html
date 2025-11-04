@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+      color: #111;
+      background-image: url(img/bgpaginas.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      border-bottom: 2px solid #000;
+      padding: 18px 0;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 22px;
+      padding: 4px 18px;
+      font-weight: 600;
+    }
+
+    .layout {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: flex;
+      gap: 24px;
+      padding: 0 16px;
+    }
+
+    main {
+      flex: 1;
+      min-height: 600px;
+      padding: 18px;
+      color: #222;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: #0b4f6c;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 20px;
+    }
+
+    td {
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      padding: 20px;
+      vertical-align: top;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    img {
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 8px 0;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    ul {
+      text-align: left;
+      margin: 10px 0 0 20px;
+      color: #333;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* destaque do antivírus */
+    .highlight {
+      background: linear-gradient(135deg, rgba(11,79,108,0.06), rgba(11,79,108,0.02));
+      border: 1px solid rgba(11,79,108,0.08);
+    }
+
+    .small-note {
+      font-size: 13px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    /* responsivo */
+    @media (max-width: 768px) {
+      table, tr, td { display: block; width: 100%; }
+      td { margin-bottom: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="#">Quem somos?</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+      <h1>Portfólio de Softwares</h1>
+      <p>Conheça alguns dos sistemas desenvolvidos pela a nossa equipe:</p>
+
+      <table>
+        <tr align="left" valign="top">
+          <td width="50%">
+            <h3>GestorMax</h3>
+            <img src="img/Logo de GestorMax em vetor.png" width="200px"     alt="GestorMax Sistema de Gestão">
+            <p><strong>Descrição:</strong> Sistema ERP completo para gestão de pequenas e médias empresas. Integra finanças, vendas, estoque, RH e relatórios em uma única plataforma online.</p>
+            <p><strong>Principais Funcionalidades:</strong></p>
+            <ul>
+              <li>Controle financeiro e fluxo de caixa</li>
+              <li>Gestão de estoque e fornecedores</li>
+              <li>CRM e vendas integradas</li>
+              <li>Relatórios gerenciais e dashboards</li>
+            </ul>
+          </td>
+
+          <td width="50%">
+            <h3>EduTech Pro</h3>
+            <img src="img/ChatGPT Image 4 de nov. de 2025, 10_38_59.png"  width="200px"  alt="EduTech Pro">
+            <p><strong>Descrição:</strong> Plataforma educacional online que conecta professores e alunos em um ambiente de aprendizagem digital com videoaulas, tarefas e fóruns.</p>
+            <p><strong>Principais Funcionalidades:</strong></p>
+            <ul>
+              <li>Aulas ao vivo e gravadas</li>
+              <li>Área do aluno e do professor</li>
+              <li>Correção automática de atividades</li>
+              <li>Relatórios de desempenho</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr align="left" valign="top">
+          <td width="50%">
+            <h3>SafeHome</h3>
+            <img src="img/ChatGPT Image 4 de nov. de 2025, 10_50_01.png" width="200px" alt="SafeHome">
+            <p><strong>Descrição:</strong> Aplicativo de segurança residencial que permite monitorar câmeras, sensores e trancas inteligentes diretamente do celular.</p>
+            <p><strong>Principais Funcionalidades:</strong></p>
+            <ul>
+              <li>Monitoramento de câmeras em tempo real</li>
+              <li>Alertas de movimento e intrusão</li>
+              <li>Controle remoto de portas e luzes</li>
+              <li>Histórico de eventos e gravações</li>
+            </ul>
+          </td>
+
+          <!-- Antivírus simplificado -->
+          <td width="50%" >
+            <h3>BullProtect — Antivírus Corporativo</h3>
+            <img src= "img/Gemini_Generated_Image_24np924np924np92.png" width="250px"     alt= "SecureShield Antivírus">
+            <p><strong>Descrição:</strong> O <strong>BullProtect</strong>
+               protege empresas contra malwares, ransomware e ataques online, mantendo a performance do sistema estável.</p>
+
+            <p><strong>Principais Funcionalidades:</strong></p>
+            <ul>
+              <li>Detecção em tempo real com baixo consumo de CPU</li>
+              <li>Proteção contra ransomware e phishing</li>
+              <li>Varredura sob demanda e agendada</li>
+              <li>Atualizações automáticas e rápidas</li>
+              <li>Console de gestão centralizada para administradores</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
