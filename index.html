@@ -12,7 +12,7 @@
         body {
             font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
             color:#111;
-            background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2025-11-03\ à\(s\)\ 22.34.16_aa24204f.jpg);
+            background-image: url(img/bgIndex.jpeg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover; /* imagem cobre o conteúdo */
@@ -103,6 +103,13 @@
             transform: scale(1.02);
         }
 
+        .logo {
+            height: auto;
+            width: 220px;
+            margin-right: 8px;
+            vertical-align: middle;
+            transform: translateX(-90px); /* move apenas o logo para a esquerda */
+        }
     </style>
 </head>
 
@@ -110,7 +117,10 @@
     <!-- Cabeçalho / menu superior -->
      <header>
         <nav>
-            <a href="index.html"> HOME</a>
+            <a href="index.html">
+                <img src="img/logoMenuSuperior.png" alt="Logo da empresa" class="logo">
+                Home
+            </a>
             <a href="quem_somos.html"> Quem somos?</a>
             <a href="portfolio.html"> Portfólio</a>
             <a href="contato.html"> Contato</a>
@@ -120,6 +130,9 @@
      <!-- Conteúdo principal + menu lateral -->
       <div class="layout">
         <main>
+            <br>
+            <br>
+            
             <h2>Bem-vindo ao site Little Bull</h2>
             <p>Software Development</p>
         </main>
