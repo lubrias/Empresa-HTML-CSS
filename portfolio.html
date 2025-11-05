@@ -7,12 +7,19 @@
   <title>Portfólio</title>
 
   <style>
+    .logo {
+            height: auto;
+            width: 220px;
+            margin-right: 8px;
+            vertical-align: middle;
+            transform: translateX(-90px); /* move apenas o logo para a esquerda */
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
       color: #111;
-      background-image: url(img/Design\ sem\ nome.png);
+      background-image: url(img/bgIndex.jpeg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -86,6 +93,9 @@
       height: auto;
       margin-bottom: 10px;
     }
+    .logo {
+      margin-bottom: 0;
+    }
 
     p {
       margin: 8px 0;
@@ -123,14 +133,17 @@
   </style>
 </head>
 
-<body>
+<body>  
   <header>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="quem_somos.html">Quem somos?</a>
-      <a href="portfolio.html">Portfólio</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+      <nav>
+          <a href="index.html">
+              <img src="img/logoMenuSuperior.png" alt="Logo da empresa" class="logo">
+              Home
+          </a>
+          <a href="quem_somos.html">Quem somos?</a>
+          <a href="portfolio.html">Portfólio</a>
+          <a href="contato.html">Contato</a>
+      </nav>
   </header>
 
   <div class="layout">

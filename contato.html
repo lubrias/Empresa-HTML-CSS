@@ -12,7 +12,7 @@
         body {
             font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
             color:#111;
-            background-image: url(img/Design\ sem\ nome.png);
+            background-image: url(img/bgIndex.jpeg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover; /* imagem cobre o conteúdo */
@@ -44,6 +44,14 @@
             font-size: 22px;
             padding: 4px 18px;
             font-weight: 600;
+        }
+
+        .logo {
+            height: auto;
+            width: 220px;
+            margin-right: 8px;
+            vertical-align: middle;
+            transform: translateX(-90px); /* move apenas o logo para a esquerda */
         }
 
         /* Área principal + aside (menu lateral) */
@@ -96,14 +104,17 @@
 
 <body>
     <!-- Cabeçalho / menu superior -->
-     <header>
+    <header>
         <nav>
-            <a href="index.html"> HOME</a>
-            <a href="quem_somos.html"> Quem somos?</a>
-            <a href="portfolio.html"> Portfólio</a>
-            <a href="contato.html"> Contato</a>
+            <a href="index.html">
+                <img src="img/logoMenuSuperior.png" alt="Logo da empresa" class="logo">
+                Home
+            </a>
+            <a href="quem_somos.html">Quem somos?</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
         </nav>
-     </header>
+    </header>
 
      <!-- Conteúdo principal + menu lateral -->
       <div class="layout">
