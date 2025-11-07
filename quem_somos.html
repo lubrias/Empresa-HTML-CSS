@@ -6,7 +6,7 @@
     <title>Quem somos?</title>
 
     <style>
-        
+        /* RESET BÁSICO */
         * { 
             box-sizing: border-box; 
             margin:0; 
@@ -25,7 +25,7 @@
             background-color: #f2f2f2;
         }
 
-        
+        /* CABEÇALHO */
         header {
             border-bottom: 2px solid #000;
             padding: 18px 0;
@@ -52,14 +52,22 @@
             font-weight: 600;
         }
 
-       
+        /* ✅ LOGO IGUAL À HOME */
+        .logo {
+            height: auto;
+            width: 220px;
+            margin-right: 8px;
+            vertical-align: middle;
+            transform: translateX(-90px);
+        }
+
+        /* CONTEÚDO PRINCIPAL */
         .layout {
             max-width: 1200px;
-            margin: 10px auto; 
+            margin: 30px auto; 
             padding: 0 16px;
         }
 
-       
         .hero {
             height: 160px;           
             display: flex;
@@ -80,10 +88,11 @@
             margin-top: 0;
         }
 
-        
+        /* TABELAS DE CONTEÚDO */
         .content-table {
             width: 100%;
             border-spacing: 12px; 
+            table-layout: fixed; /* ✅ Faz as colunas terem larguras fixas */
         }
 
         td {
@@ -92,6 +101,8 @@
             padding: 20px;
             vertical-align: top;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 50%; /* ✅ Faz cada coluna ocupar metade */
+            min-height: 300px; /* ✅ Garante que todas fiquem da mesma altura */
         }
 
         h3 {
@@ -99,18 +110,67 @@
             color: #333;
         }
 
-    .logo {            
-            height: auto;
-            width: 220px;
-            margin-right: 8px;
-            vertical-align: middle;
-            transform: translateX(-90px); /* move apenas o logo para a esquerda */
-    }
+        /* SEÇÃO DA EQUIPE */
+        .team-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 16px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: #222;
+            text-decoration: underline;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .team-member {
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            width: 260px;
+            padding: 16px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: scale(1.03);
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+
+        .team-member h4 {
+            margin-bottom: 4px;
+            font-size: 18px;
+            color: #222;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #555;
+        }
+
     </style>
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
     <header>
         <nav>
             <a href="index.html">
@@ -123,19 +183,17 @@
         </nav>
     </header>
 
-
+    <!-- SEÇÃO INTRODUTÓRIA -->
     <div class="hero">
         <h2><u>Conheça um pouco mais sobre nossa empresa:</u></h2>
         <p>Inovação que conecta negócios ao futuro.</p>
     </div>
 
-    
+    <!-- PRIMEIRA TABELA (Quem somos) -->
     <div class="layout">
         <table class="content-table">
             <tr>
-               
-                <td style="width: 60%;">
-
+                <td>
                     <h3><u>Quem somos?</u></h3> <br>
                     <p align="justify">
                         A Little Bull é uma empresa de tecnologia fundada em 2019 por cinco primos
@@ -157,11 +215,111 @@
                     </p>
                 </td>
 
-                <td style="width: 40%; text-align:center;">
+                <td style="text-align:center;">
                     <a href="img/Captura de tela 2025-11-03 221412.png" target="_blank">
-                    <img src="img/Captura de tela 2025-11-03 221412.png" width="250" style="border-radius:8px;"><br><br></a>
+                        <img src="img/Captura de tela 2025-11-03 221412.png" width="250" style="border-radius:8px;"><br><br>
+                    </a>
                     <a href="img/Captura de tela 2025-11-03 221436.png" target="_blank">
-                    <img src="img/Captura de tela 2025-11-03 221436.png" width="250" style="border-radius:8px;"></a>
+                        <img src="img/Captura de tela 2025-11-03 221436.png" width="250" style="border-radius:8px;">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- SEÇÃO COM CARDS -->
+    <section class="team-section">
+        <h2>Nossa equipe</h2>
+        <div class="team-container">
+            
+            <div class="team-member">
+                <img src="img/integrante1.jpg" alt="Foto do integrante 1">
+                <h4>Thayslan Costa</h4>
+                <p>Desenvolvedor Back-End</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/integrante2.jpg" alt="Foto do integrante 2">
+                <h4>Ramon Trindade</h4>
+                <p>Gerente de Projetos</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/integrante3.jpg" alt="Foto do integrante 3">
+                <h4>Pedro Henrique</h4>
+                <p>Desenvolvedor Front-End</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/integrante4.jpg" alt="Foto do integrante 4">
+                <h4>João Vitor</h4>
+                <p>Desenvolvedor Front-End</p>
+            </div>
+
+            <div class="team-member">
+                <img src="img/integrante5.jpg" alt="Foto do integrante 5">
+                <h4>Walter Luan</h4>
+                <p>Designer UI/UX</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEGUNDA TABELA (Perfis individuais) -->
+    <div class="layout">
+        <table class="content-table">
+            <tr>
+                <td>
+                    <h3><u>Thayslan Costa</u></h3>
+                    <p align="justify">
+                        Thayslan Costa é um desenvolvedor backend apaixonado por inovação e tecnologia. 
+                        Formado em Engenharia de Software pela Universidade de São Paulo, possui mais de três anos 
+                        de experiência com Java, Spring Boot, AWS, Docker e bancos de dados relacionais. 
+                        Também tem interesse em análise de dados e automação de processos, sempre buscando soluções 
+                        eficientes e escaláveis. Fluente em quatro idiomas — inglês, espanhol, francês e português —, 
+                        acredita que a tecnologia é uma ferramenta poderosa para conectar pessoas de diferentes culturas 
+                        e transformar ideias em resultados.
+                    </p>
+                </td>
+
+                <td>
+                    <h3><u>Ramon Trindade</u></h3>
+                    <p align="justify">
+                        Ramon é um gerente de projetos com perfil analítico e estratégico, responsável por coordenar as etapas de desenvolvimento 
+                        e garantir que prazos, qualidade e metas sejam cumpridos. Apaixonado por liderança e inovação, atua como elo entre a equipe técnica 
+                        e os clientes, assegurando que cada solução entregue pela Little Bull supere as expectativas.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3><u>Pedro Henrique</u></h3>
+                    <p align="justify">
+                        Pedro é desenvolvedor front-end especializado em HTML, CSS, JavaScript e React. 
+                        Responsável por transformar ideias em interfaces modernas e funcionais, tem olhar atento para design responsivo e experiência do usuário. 
+                        Acredita que tecnologia e criatividade andam lado a lado para criar soluções que encantam visualmente e performam com eficiência.
+                    </p>
+                </td>
+
+                <td>
+                    <h3><u>João Vitor</u></h3>
+                    <p align="justify">
+                        João é desenvolvedor front-end com foco em performance e usabilidade. 
+                        Atua na implementação de componentes interativos e interfaces dinâmicas, garantindo que cada produto desenvolvido pela Little Bull 
+                        ofereça uma experiência fluida e intuitiva. Sempre atualizado com as novas tendências de tecnologia e frameworks modernos.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h3><u>Walter Luan</u></h3>
+                    <p align="justify">
+                        Walter é designer UI/UX e o responsável por transformar ideias em experiências visuais impactantes. 
+                        Especialista em design de interface, tipografia e paletas de cores, combina estética e funcionalidade para garantir que os produtos 
+                        da Little Bull sejam bonitos, intuitivos e eficazes. Apaixonado por arte digital e inovação, acredita que cada pixel conta.
+                    </p>
                 </td>
             </tr>
         </table>
